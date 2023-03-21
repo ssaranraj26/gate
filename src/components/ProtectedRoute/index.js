@@ -5,6 +5,7 @@ const ProtectedRoute = props => {
   const jwtToken = Cookies.get('jwt_token')
   if (jwtToken === undefined) {
     return <Redirect to="/login" />
+    <h1>eeeee</h1>
   }
   return <Route {...props} />
 }
