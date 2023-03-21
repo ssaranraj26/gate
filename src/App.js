@@ -7,6 +7,7 @@ import './App.css'
 const App = () => (
   <Switch>
     <Route exact path="/login" component={Login} />
+    <Route />
     <ProtectedRoute exact path="/" component={Home} />
   </Switch>
 )
